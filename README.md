@@ -142,12 +142,31 @@ La interfaz debe permitir al usuario:
 
 ### Scripts / Archivos
 
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
+##### `README.md`
+
+Debe contener lo siguiente:
+
+* Un título con el nombre de tu proyecto.
+* Explicar cómo descargar, instalar y ejecutar la aplicación
+  así como una introducción.
+* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
+* La imagen final de tu proyecto.
+* Investigación UX:
+  1. Explicar quiénes son los usuarios y los objetivos en relación con el
+    producto.
+  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
+    usuarios.
+  3. Luego colocarás la foto de tu primer prototipo en papel.
+  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+  5. Imagen del prototipo final.
+
+##### `src/index.html` 
+
+  Este es el punto de entrada a tu aplicación. Este archivo
   debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto `cipher`, el cual ya está
+  
+##### `src/cipher.js`
+  Acá debes implementar el objeto `cipher`, el cual ya está
   _exportado_ en el _boilerplate_. Este objeto (`cipher`) debe contener dos
   métodos:
   - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
@@ -156,9 +175,11 @@ La interfaz debe permitir al usuario:
   - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
     queremos mover a la izquierda en el alfabeto y `string` el mensaje
     (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
+##### `src/index.js`
+  Acá debes escuchar eventos del DOM, invocar `cipher.encode()`
   o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
+##### `test/cipher.spec.js`
+  Este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
 
 ## 6. Hacker edition
