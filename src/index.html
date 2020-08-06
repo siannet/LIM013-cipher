@@ -2,13 +2,139 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Ceaser</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="images/c.jpg" type="images/x-icon">
+
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <header>
+        <nav>
+           <section class="contenedor nav">
+             <div class="logo">
+               <img src="images/c.jpg" alt="">
+             </div>
+             <div class="enlaces-header">
+              <a href="#pagina1">Inicio</a>
+                <a href="#comoFunciona">Como funciona</a>
+                <a href="#contacto">Contacto</a>
+             </div>
+            </section>
+       </nav>
+       
+      
+       <section id="pagina1">
+         <h1>UN ALGORITMO DEBE SER VISTO PARA SER CREIDO</h1>  
+         <h2>Protege tu texto CIFRADO CEASER mueve cada letra un determinado número
+          de espacios en el alfabeto, tu mensaje sera indecifrable.</h2>
+          <div id="botones">
+          <button type="button" id="start" class="b">Contraseña</button>
+          <button type="button" id="start1" class="b">Texto</button>
+        </div>
+       </section>
+      
+
+       <div class="box">
+       <section id="pagina2">
+        <form>
+        <div id="caja"> <input type="number" required="" id="desplazamiento" class="contenedor1"><br></div>
+        <div id="caja1"> <textarea rows="1" cols="90" id="texto" class="contenedor1"></textarea> <br></div>
+         <button type="button"  id="cifrar" class="c">cifrar</button>
+        <button type="button"  id="descifrar" class="c">descifrar</button><br>
+        <div id="caja2"><textarea rows="1" cols="90" id="textoRespuesta" class="contenedor1"></textarea> <br></div> 
+        </form>
+       <button id="volver" class="c">volver</button>
+      </section>
     </div>
+
+    <div class="box1">
+      <section id="pagina3">
+        <form>
+          <div id="caja3"> <input type="number" required="" id="desplazamiento1" class="contenedor1"><br></div>
+            <div id="caja4"><textarea rows="10" cols="90" id="texto1" class="contenedor1"></textarea> <br></div>
+         <button type="button"  id="cifrar1" class="c">cifrar</button>
+         <button type="button"  id="descifrar1" class="c">descifrar</button><br>
+         <div id="caja5"><textarea rows="5" cols="90" id="textoRespuesta1" class="contenedor1"></textarea> <br></div>
+       </form>
+       <button id="volver1" class="c">volver</button>
+      </section>
+    </div>
+
+   </header>
+    
+     <main>
+      <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">Nuestros servicios</h2>
+        <div class="contenedor-sobre-nosotros">
+          <img src="images/lock.png" alt="" class="imagen-about-us">
+          <div class="contenido-textos">
+            <h3><span>1</span>Generador de contraseñas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Corporis, libero temporibus nemo fuga tempore sapiente ex voluptates 
+               reiciendis a dolore ipsam facere blanditiis consequatur nisi at,
+                quibusdam, laboriosam ducimus aliquam!</p>
+            <h3><span>2</span>Texto encriptado</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Fugiat asperiores dignissimos voluptatum ea, facilis quod illum
+               aut, quis dolore molestias nobis neque sapiente a obcaecati in placeat, 
+               pariatur iure mollitia!</p>
+          </div>
+        </div>
+     </section>
+
+     <section class="about-services" id="comoFunciona">
+       <div class="contenedor">
+         <h2 class="titulo">Como funciona</h2>
+         <div class="servicio-cont">
+           <div class="servicio-ind">
+             <img src="images/contraseña.png" alt="">
+             <h3>Genere contraseñas seguras</h3>
+             <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+             <p>2. Voluptatibus accusamus illo porro quo? Aliquid laboriosam </p><br>
+             <p>3. Dolores unde natus tempore, et perspiciatis pariatur quod</p><br>
+             <p>4. Vitae, earum dicta adipisci facilis! Unde, magni.</p><br>
+           </div>
+           <div class="servicio-ind">
+             <img src="images/mensaje.png" alt="">
+             <h3>Cifrar texto</h3>
+             <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+             <p>2. Voluptatibus accusamus illo porro quo? Aliquid laboriosam </p><br>
+             <p>3. Dolores unde natus tempore, et perspiciatis pariatur quod</p><br>
+             <p>4. Vitae, earum dicta adipisci facilis! Unde, magni.</p><br>
+            </div>
+          </div>
+        </div>
+     </section>
+    </main>
+
+    <footer>
+      <div class="contenedor-footer" id="contacto">
+        <div class="content-foo">
+          <h4>Phone</h4>
+          <p>960139844</p>
+        </div>
+        <div class="content-foo">
+          <h4>Mail</h4>
+          <p>ServicioTecnico@ceaser.com</p>
+        </div>
+        <div class="content-foo">
+          <h4>Locacion</h4>
+          <p>Lim,Perú</p>
+        </div>
+         <div class="content-foo">
+          <h4>Redes sociales</h4>
+          <div class="social-media">
+            <img src="https://img.icons8.com/android/24/000000/facebook-new.png"/>
+            <img src="https://img.icons8.com/android/24/000000/gmail-login.png"/>
+            <img src="https://img.icons8.com/material-outlined/24/000000/whatsapp.png"/>
+          </div>
+        </div>
+      </div>
+      <h2 class="titulo-final">&copy; ceaser</h2>
+    </footer>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
+

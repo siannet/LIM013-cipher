@@ -1,0 +1,323 @@
+/* transiciones */
+
+ #vent{
+     display: none;
+ }
+
+ #pagina2{
+     display: none; 
+ }
+
+ #pagina3{
+     display: none;
+ }
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body{
+     font-family: "open sans";
+ }
+
+ .contenedor{
+     padding: 60px 0;
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+     overflow: hidden;
+ }
+
+ /* pasos */
+ .titulo{
+     color: #666666;
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 60px;
+ }
+
+ /* header (fondo) */
+
+ header{
+     width: 100%;
+     height: 550px;
+     background: url(images/fondo.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     position: relative;
+ }
+
+
+ nav{
+     width: 100%;
+     height: 70px;
+     background: #fff;
+     border-bottom: 1px solid transparent;
+     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+     position: fixed;
+     top: 0;
+     z-index: 100;
+ }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    padding-top: 40px;
+}
+
+ .nav .logo{
+     height: 80px;
+ }
+
+ .nav .logo img{
+    height: 100%;
+    vertical-align: top;
+ }
+
+ .enlaces-header{
+     font-weight: 300;
+ }
+
+ .nav .enlaces-header a{
+     color: #5d6678;
+     text-decoration: none;
+     margin-left: 25px;
+ }
+
+/* botones */
+
+.b{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#333333,#000000);
+    transition: 0.3s;
+}
+
+.b:hover{
+    color: #333333;
+}
+
+/* bienvenida */
+
+#pagina1  {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    
+}
+
+#pagina1 h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+/* contraseña */
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* texto */
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    margin-top: 100px;
+}
+
+
+
+/* mensajeria */
+#pagina1 h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+.c{
+    position: relative;
+    display: inline-block;
+    padding: 6px 22px;
+    margin: 3px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#333333,#000000);
+    transition: 0.3s;
+}
+.c:hover{
+    color: #333333;
+    
+}
+/* textarea */
+.contenedor1{
+    background-color: #f2f2f2;
+    padding: 3px;
+}
+
+#caja {
+    padding: 8px;
+}
+
+#caja1 {
+    padding: 8px;
+}
+
+#caja2 {
+    padding: 8px;
+}
+#caja3 {
+    padding: 8px;
+}
+#caja4 {
+    padding: 8px;
+}
+#caja5 {
+    padding: 8px;
+}
+
+/* about us */
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+
+.contenido-textos h3{
+    margin-bottom: 25px;
+}
+
+.contenido-textos h3 span{
+    background: black;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* contacto */
+
+footer{
+    background: black;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+    color: #9e9797;
+}
+
+.contenedor-foo{
+    text-align: center;
+}
+
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-foo p{
+    color: #fff;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+} 
+.social-media{
+    size: 40px;
+}
