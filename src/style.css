@@ -23,7 +23,7 @@
  }
 
  .contenedor{
-     padding: 60px 0;
+     padding: 50px 0;
      width: 90%;
      max-width: 1000px;
      margin: auto;
@@ -102,7 +102,7 @@
     font-size: 16px;
     letter-spacing: 2px;
     border-radius: 40px;
-    background: linear-gradient(90deg,#333333,#000000);
+    background: linear-gradient(10deg,#333333,#000000);
     transition: 0.3s;
 }
 
@@ -118,12 +118,12 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center; 
     
 }
 
-#pagina1 h1{
+#pagina1 h1 {
     font-size: 40px;
     color: #fff;
 }
@@ -161,6 +161,7 @@ form{
     font-size: 20px;
     font-weight: 300;
     color: #fff;
+    flex-direction: column;
 }
 
 
@@ -176,7 +177,7 @@ form{
     font-size: 12px;
     letter-spacing: 2px;
     border-radius: 40px;
-    background: linear-gradient(90deg,#333333,#000000);
+    background: linear-gradient(10deg,#333333,#000000);
     transition: 0.3s;
 }
 .c:hover{
@@ -318,6 +319,12 @@ footer{
     margin: 20px 0 0 0;
     color: #9e9797;
 } 
-.social-media{
-    size: 40px;
+
+
+label{
+    color: #fff;
+}
+
+svg{
+    padding: 2px;
 }

@@ -33,21 +33,21 @@ btnVolver1.addEventListener("click",function(){
   pagina1.style.display="flex";
 })
 
-function onClickBtnCifrar() {
-console.log("cifrar");
-    const valueTexto = document.getElementById("texto").value;
-    const valueDesplazamiento = parseInt(document.getElementById("desplazamiento").value);
+function onClickBtnCifrar(idTexto,idTextoRespuesta,idDesplazamiento) {
+// console.log("cifrar");
+    const valueTexto = document.getElementById(idTexto).value;
+    const valueDesplazamiento = parseInt(document.getElementById(idDesplazamiento).value);
       // console.log(valueTexto,valueDesplazamiento);
     const cifradoCompleto = cipher.cifrado(valueDesplazamiento,valueTexto);
-    document.getElementById("textoRespuesta").value=cifradoCompleto;
+    document.getElementById(idTextoRespuesta).value=cifradoCompleto;
 }
 
-btnCifrar.addEventListener("click",onClickBtnCifrar);
-btnCifrar1.addEventListener("click",onClickBtnCifrar);
+btnCifrar.addEventListener("click",() => onClickBtnCifrar("texto", "textoRespuesta","desplazamiento"));
+btnCifrar1.addEventListener("click",() => onClickBtnCifrar("texto1", "textoRespuesta1","desplazamiento1"));
     
            
 function onClickBtnDesCifrar(idTexto,idTextoRespuesta,idDesplazamiento) {
- console.log("descifrar");
+//  console.log("descifrar");
    const valueTexto = document.getElementById(idTexto).value;
    const valueDesplazamiento = parseInt(document.getElementById(idDesplazamiento).value);
     //  console.log(valueTexto,valueDesplazamiento);

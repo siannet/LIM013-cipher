@@ -38,11 +38,11 @@
        <div class="box">
        <section id="pagina2">
         <form>
-        <div id="caja"> <input type="number" required="" id="desplazamiento" class="contenedor1"><br></div>
-        <div id="caja1"> <textarea rows="1" cols="90" id="texto" class="contenedor1"></textarea> <br></div>
+        <div id="caja"> <label for="Name">Numero </label><input type="number" required="" id="desplazamiento" class="contenedor1"><br></div>
+        <div id="caja1"> <textarea rows="1" cols="90" id="texto" class="contenedor1" placeholder="Ingrese su contraseña simple"></textarea> <br></div>
          <button type="button"  id="cifrar" class="c">cifrar</button>
         <button type="button"  id="descifrar" class="c">descifrar</button><br>
-        <div id="caja2"><textarea rows="1" cols="90" id="textoRespuesta" class="contenedor1"></textarea> <br></div> 
+        <div id="caja2"><textarea rows="1" cols="90" id="textoRespuesta" class="contenedor1" placeholder="Nueva contraseña"></textarea> <br></div> 
         </form>
        <button id="volver" class="c">volver</button>
       </section>
@@ -51,11 +51,11 @@
     <div class="box1">
       <section id="pagina3">
         <form>
-          <div id="caja3"> <input type="number" required="" id="desplazamiento1" class="contenedor1"><br></div>
-            <div id="caja4"><textarea rows="10" cols="90" id="texto1" class="contenedor1"></textarea> <br></div>
+          <div id="caja3"><label for="Name">Numero </label> <input type="number" required="" id="desplazamiento1" class="contenedor1"><br></div>
+         <div id="caja4"><textarea rows="10" cols="90" id="texto1" class="contenedor1" placeholder="Ingrese su mensaje"></textarea> <br></div>
          <button type="button"  id="cifrar1" class="c">cifrar</button>
          <button type="button"  id="descifrar1" class="c">descifrar</button><br>
-         <div id="caja5"><textarea rows="5" cols="90" id="textoRespuesta1" class="contenedor1"></textarea> <br></div>
+         <div id="caja5"><textarea rows="5" cols="90" id="textoRespuesta1" class="contenedor1" placeholder="Mensaje seguro"></textarea> <br></div>
        </form>
        <button id="volver1" class="c">volver</button>
       </section>
@@ -125,9 +125,18 @@
          <div class="content-foo">
           <h4>Redes sociales</h4>
           <div class="social-media">
-            <img src="https://img.icons8.com/android/24/000000/facebook-new.png"/>
-            <img src="https://img.icons8.com/android/24/000000/gmail-login.png"/>
-            <img src="https://img.icons8.com/material-outlined/24/000000/whatsapp.png"/>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#9e9797"><path d="M86,0c-47.4935,0 -86,38.5065 -86,86c0,43.11467 31.76267,78.71867 73.143,84.93933v-62.14933h-21.27783v-22.60367h21.27783v-15.04283c0,-24.90417 12.13317,-35.83333 32.8305,-35.83333c9.9115,0 15.1575,0.73817 17.63717,1.06783v19.72983h-14.11833c-8.78633,0 -11.85367,8.33483 -11.85367,17.72317v12.35533h25.74983l-3.49017,22.60367h-22.25967v62.3285c41.97517,-5.69033 74.36133,-41.581 74.36133,-85.1185c0,-47.4935 -38.5065,-86 -86,-86z"></path></g></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#9e9797"><path d="M71.66667,0v28.66667h-17.91667l32.25,43l32.25,-43h-17.91667v-28.66667zM0,43v129h172v-129h-45.91146l-11.42187,14.33333h35.83333v2.91146l-64.5,47.92708l-64.5,-47.92708v-2.91146h35.83333l-11.42187,-14.33333zM21.5,87.11979l58.00521,43.44792l6.49479,4.70313l6.49479,-4.70312l58.00521,-43.44792v63.38021h-129z"></path></g></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#9e9797"><path d="M136.7185,35.31733c-13.51633,-13.5235 -31.49033,-20.97683 -50.63967,-20.984c-39.45967,0 -71.5735,32.0995 -71.58783,71.55917c-0.00717,12.61333 3.2895,24.92567 9.55317,35.776l-9.71083,35.99817l37.50317,-8.86517c10.45617,5.70467 22.22383,8.7075 34.2065,8.71467h0.02867c39.4525,0 71.56633,-32.10667 71.58783,-71.55917c0.01433,-19.12783 -7.42467,-37.109 -20.941,-50.63967zM121.10233,111.47033c-1.49067,4.17817 -8.7935,8.20583 -12.07583,8.49967c-3.28233,0.301 -6.35683,1.4835 -21.46417,-4.472c-18.18183,-7.16667 -29.66283,-25.80717 -30.5515,-26.99683c-0.89583,-1.19683 -7.30283,-9.6965 -7.30283,-18.49717c0,-8.80067 4.6225,-13.12933 6.26367,-14.91383c1.64117,-1.79167 3.57617,-2.236 4.773,-2.236c1.18967,0 2.3865,0 3.42567,0.043c1.27567,0.05017 2.6875,0.11467 4.02767,3.08883c1.591,3.54033 5.06683,12.384 5.51117,13.27983c0.44433,0.89583 0.74533,1.94217 0.1505,3.13183c-0.59483,1.18967 -0.89583,1.935 -1.7845,2.98133c-0.89583,1.04633 -1.87767,2.32917 -2.68033,3.13183c-0.89583,0.88867 -1.8275,1.86333 -0.78833,3.64783c1.04633,1.79167 4.62967,7.64683 9.94733,12.384c6.837,6.09167 12.59183,7.9765 14.3835,8.8795c1.79167,0.89583 2.83083,0.74533 3.87717,-0.4515c1.04633,-1.18967 4.472,-5.21733 5.66167,-7.009c1.18967,-1.79167 2.3865,-1.49067 4.02767,-0.89583c1.64117,0.59483 10.43467,4.9235 12.21917,5.81933c1.79167,0.89583 2.98133,1.34017 3.42567,2.0855c0.44433,0.73817 0.44433,4.3215 -1.04633,8.49967z"></path></g></g></svg>
           </div>
         </div>
       </div>
