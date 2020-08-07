@@ -4,154 +4,60 @@
 
 * [1. Descargar/instalar/ejecutar](#1-Descargar/instalar/ejecutar)
 * [2. Proyecto](#2-Proyecto)
-* [3. Nuestros usuarios](#3-Nuestros-usuarios)
-* [4. Nuestro producto](#4-Nuestro-producto)
-* [5. Investigación UX](#5-Investigacion-UX)
+* [3. Producto](#3-Producto)
+* [4. Investigación UX](#4-Investigacion-UX)
+* [A. Usuarios](#A-Usuarios)
 
 ***
 
 ## 1. Descargar/instalar/ejecutar
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+Para utilizar el proyecto como paso inicial necitan forkear el repositorio,clonarlo y adicionalmente ejecutarlo con npm.
 
-![caeser-cipher](https://raw.githubusercontent.com/siannet/LIM013-cipher/master/src/images/prototipo.png)
+
+## 2. Proyecto
+
+En este proyecto creé una aplicación web a favor de los usuarios vulnerables a robos ciberneticos, 
+al mantener una contraseña "sencilla" exponiendose así a esta usual situciacion. CEASER, cifra tu 
+contraseña original por una mas compleja, al escoger un numero de desplazamiento,el algoritmo 
+utilizado por la aplicación generará una contraseña fiable, adicionandole la complijidad que esta
+necesita mediante adicion de numeros, mayusculas y simbolos. Esto le permite al usuario generar su 
+contraseña las veces necesarias,sin recordar numeros, mayusculas, simbolos,etc. Adicionalmente 
+tambien ofrece la opción de cifrar y descifrar texto, respaldando su mensaje con su numero clave.
 
 El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
 un tipo de cifrado por sustitución, es decir que cada letra del texto original
 es reemplazada por otra que se encuentra un número fijo de posiciones
 (desplazamiento) más adelante en el mismo alfabeto.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+## 3. Producto
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+![caeser-cipher](https://raw.githubusercontent.com/siannet/LIM013-cipher/master/src/images/pagweb.png)
 
-## 2. Proyecto
+Generador de contraseña:
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+![caeser-cipher](https://raw.githubusercontent.com/siannet/LIM013-cipher/master/src/images/derecha.png)
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+Cifrado de texto:
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+![caeser-cipher](https://raw.githubusercontent.com/siannet/LIM013-cipher/master/src/images/izquierda.png)
 
-## 3. Nuestros usuarios
 
-Aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+## 4. Investigación UX
 
-## 4. Nuestro producto
+## A. Nuestros usuarios
 
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
+La investigación realizada a nuestros usuarios se enfoco en "Por qué no es usual que los usuarios utilicen contraseñas seguras".Se encontro dos grupos muy definidos:
 
-## 5. Criterios de aceptación mínimos del proyecto
+Por una parte están los de Tipo A, que son personas que, a pesar de ser conscientes de que sus contraseñas son poco seguras, deciden utilizarlas en su día a día porque son fáciles de recordar. Además, creen que nunca van a ser hackeados porque la forma en la que usan sus dispositivos no les lleva a cometer ninguna imprudencia.
 
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
+Por otra parte se encuentran los de Tipo B, que creen que sus cuentas personales no valen nada para los ciberdelincuentes, por lo que se despreocupan de su seguridad online.
 
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Estos grupos hicieron mucha refencia en que mientras mas complejidad tenian, era incluso mucho mas dificil para ellos mismos acordarse de estas. En adicion es importante resaltar que el 60% de empresas utilizan un documento en la red para documentar sus contraseñas, volviendolas vulnerables y un punto facil para los robos ciberneticos.
 
-### Definición del producto
+## B. Prototipo
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
-
-La interfaz debe permitir al usuario:
-
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que
-  el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
-
-### Scripts / Archivos
-
-##### `README.md`
-
-Debe contener lo siguiente:
-
-* Un título con el nombre de tu proyecto.
-* Explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
-
-##### `src/index.html` 
-
-  Este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-  
-##### `src/cipher.js`
-  Acá debes implementar el objeto `cipher`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`cipher`) debe contener dos
-  métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-##### `src/index.js`
-  Acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-##### `test/cipher.spec.js`
-  Este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
+![caeser-cipher](https://raw.githubusercontent.com/siannet/LIM013-cipher/master/src/images/prototipo.png)
 
 
